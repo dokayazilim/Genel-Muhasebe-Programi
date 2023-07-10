@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D127F4D-5ECB-49D5-8ED7-D5650DFF7E27}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>bordro</RootNamespace>
+    <AssemblyName>bordro</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anamenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anamenu.Designer.cs">
+      <DependentUpon>anamenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bordroDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bordroDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bordroDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bordroDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bordroDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bordroDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bordroDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bordroDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bordroDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bordroDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bordroortaklarDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bordroortaklarDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bordroortaklarDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bordroortaklarDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bordroortaklarDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bordroortaklarDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bordroortaklarDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bordroortaklarDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bordroortaklarDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bordroortaklarDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="damgavergisibeyannamesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="damgavergisibeyannamesi.Designer.cs">
+      <DependentUpon>damgavergisibeyannamesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formba.Designer.cs">
+      <DependentUpon>formba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formbs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formbs.Designer.cs">
+      <DependentUpon>formbs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gelirvergisimukellefbeyannamesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gelirvergisimukellefbeyannamesi.Designer.cs">
+      <DependentUpon>gelirvergisimukellefbeyannamesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kayitlipersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayitlipersonel.Designer.cs">
+      <DependentUpon>kayitlipersonel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kdvbeyannamebir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kdvbeyannamebir.Designer.cs">
+      <DependentUpon>kdvbeyannamebir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kdvbeyannamesiiki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kdvbeyannamesiiki.Designer.cs">
+      <DependentUpon>kdvbeyannamesiiki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kesinmizanbildirimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kesinmizanbildirimi.Designer.cs">
+      <DependentUpon>kesinmizanbildirimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="muhtasarbeyanname.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="muhtasarbeyanname.Designer.cs">
+      <DependentUpon>muhtasarbeyanname.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="yillikgelirvergisibeyannamesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yillikgelirvergisibeyannamesi.Designer.cs">
+      <DependentUpon>yillikgelirvergisibeyannamesi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="anamenu.resx">
+      <DependentUpon>anamenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="damgavergisibeyannamesi.resx">
+      <DependentUpon>damgavergisibeyannamesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formba.resx">
+      <DependentUpon>formba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formbs.resx">
+      <DependentUpon>formbs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gelirvergisimukellefbeyannamesi.resx">
+      <DependentUpon>gelirvergisimukellefbeyannamesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayitlipersonel.resx">
+      <DependentUpon>kayitlipersonel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kdvbeyannamebir.resx">
+      <DependentUpon>kdvbeyannamebir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kdvbeyannamesiiki.resx">
+      <DependentUpon>kdvbeyannamesiiki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kesinmizanbildirimi.resx">
+      <DependentUpon>kesinmizanbildirimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="muhtasarbeyanname.resx">
+      <DependentUpon>muhtasarbeyanname.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="yillikgelirvergisibeyannamesi.resx">
+      <DependentUpon>yillikgelirvergisibeyannamesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="bordroDataSet.xsc">
+      <DependentUpon>bordroDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bordroDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bordroDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bordroDataSet.xss">
+      <DependentUpon>bordroDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bordroDataSet1.xsc">
+      <DependentUpon>bordroDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="bordroDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bordroDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bordroDataSet1.xss">
+      <DependentUpon>bordroDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="bordroDataSet2.xsc">
+      <DependentUpon>bordroDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="bordroDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bordroDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bordroDataSet2.xss">
+      <DependentUpon>bordroDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="bordroDataSet3.xsc">
+      <DependentUpon>bordroDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="bordroDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bordroDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bordroDataSet3.xss">
+      <DependentUpon>bordroDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="bordroDataSet4.xsc">
+      <DependentUpon>bordroDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="bordroDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bordroDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bordroDataSet4.xss">
+      <DependentUpon>bordroDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="bordroortaklarDataSet.xsc">
+      <DependentUpon>bordroortaklarDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bordroortaklarDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bordroortaklarDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bordroortaklarDataSet.xss">
+      <DependentUpon>bordroortaklarDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bordroortaklarDataSet1.xsc">
+      <DependentUpon>bordroortaklarDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="bordroortaklarDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bordroortaklarDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bordroortaklarDataSet1.xss">
+      <DependentUpon>bordroortaklarDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="bordroortaklarDataSet2.xsc">
+      <DependentUpon>bordroortaklarDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="bordroortaklarDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bordroortaklarDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bordroortaklarDataSet2.xss">
+      <DependentUpon>bordroortaklarDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="bordroortaklarDataSet3.xsc">
+      <DependentUpon>bordroortaklarDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="bordroortaklarDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bordroortaklarDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bordroortaklarDataSet3.xss">
+      <DependentUpon>bordroortaklarDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="bordroortaklarDataSet4.xsc">
+      <DependentUpon>bordroortaklarDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="bordroortaklarDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bordroortaklarDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bordroortaklarDataSet4.xss">
+      <DependentUpon>bordroortaklarDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bordro.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bordroortaklar.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

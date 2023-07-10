@@ -1,0 +1,724 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2F452787-049E-4A83-A7ED-AAF0F4C22479}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>isletmedefteri</RootNamespace>
+    <AssemblyName>isletmedefteri</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anamenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anamenu.Designer.cs">
+      <DependentUpon>anamenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="carihesap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carihesap.Designer.cs">
+      <DependentUpon>carihesap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="carimizan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carimizan.Designer.cs">
+      <DependentUpon>carimizan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="defterkayitlifirma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="defterkayitlifirma.Designer.cs">
+      <DependentUpon>defterkayitlifirma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="defterkayitlifirma2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="defterkayitlifirma2.Designer.cs">
+      <DependentUpon>defterkayitlifirma2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="defterkayitlifirma3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="defterkayitlifirma3.Designer.cs">
+      <DependentUpon>defterkayitlifirma3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="defterkayitlifirma4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="defterkayitlifirma4.Designer.cs">
+      <DependentUpon>defterkayitlifirma4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiris.Designer.cs">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="isletmedefteriortakhesaplarDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>isletmedefteriortakhesaplarDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="isletmedefteriortakhesaplarDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>isletmedefteriortakhesaplarDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="isletmedefteriortakhesaplarDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>isletmedefteriortakhesaplarDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="isletmedefteriortakhesaplarDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>isletmedefteriortakhesaplarDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="isletmedefteriortakhesaplarDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>isletmedefteriortakhesaplarDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="isletmedefteriortakhesaplarDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>isletmedefteriortakhesaplarDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="isletmedefteriortakhesaplarkayitDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>isletmedefteriortakhesaplarkayitDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="isletmedefteriortakhesaplarkayitDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>isletmedefteriortakhesaplarkayitDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="isletmedefteriortakhesaplarkayitDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>isletmedefteriortakhesaplarkayitDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="isletmedefteriortaklarDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>isletmedefteriortaklarDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="isletmedefteriortaklarDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>isletmedefteriortaklarDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="isletmedefteriortaklarDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>isletmedefteriortaklarDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="isletmedefteriortaklarDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>isletmedefteriortaklarDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="isletmedefteriortaklarDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>isletmedefteriortaklarDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="isletmedefteriortaklarDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>isletmedefteriortaklarDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="isletmedefteriortaklarDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>isletmedefteriortaklarDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kayitlifirma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayitlifirma.Designer.cs">
+      <DependentUpon>kayitlifirma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kayitlifirmayeni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayitlifirmayeni.Designer.cs">
+      <DependentUpon>kayitlifirmayeni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="muhasebeortakhesaplarcariDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>muhasebeortakhesaplarcariDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="muhasebeortakhesaplarcariDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>muhasebeortakhesaplarcariDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="muhasebeortakhesaplarcariDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>muhasebeortakhesaplarcariDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="muhasebeortakhesaplarcariDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>muhasebeortakhesaplarcariDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="muhasebeortakhesaplarcariDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>muhasebeortakhesaplarcariDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="muhasebeortakhesaplarisletmeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>muhasebeortakhesaplarisletmeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="muhasebeortakhesaplarisletmeDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>muhasebeortakhesaplarisletmeDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="muhasebeortakhesaplarisletmeDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>muhasebeortakhesaplarisletmeDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="muhasebeortakhesaplarisletmeDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>muhasebeortakhesaplarisletmeDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="muhasebeortakhesaplarisletmeDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>muhasebeortakhesaplarisletmeDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="muhasebeortakhesaplarstokDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>muhasebeortakhesaplarstokDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="muhasebeortakhesaplarstokDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>muhasebeortakhesaplarstokDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="muhasebeortakhesaplarstokDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>muhasebeortakhesaplarstokDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="muhasebeortakhesaplarstokDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>muhasebeortakhesaplarstokDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="stokenvanteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stokenvanteri.Designer.cs">
+      <DependentUpon>stokenvanteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stokhareket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stokhareket.Designer.cs">
+      <DependentUpon>stokhareket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stoktanimlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stoktanimlari.Designer.cs">
+      <DependentUpon>stoktanimlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vsb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vsb.Designer.cs">
+      <DependentUpon>vsb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yenifirma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yenifirma.Designer.cs">
+      <DependentUpon>yenifirma.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="anamenu.resx">
+      <DependentUpon>anamenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="carihesap.resx">
+      <DependentUpon>carihesap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="carimizan.resx">
+      <DependentUpon>carimizan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="defterkayitlifirma.resx">
+      <DependentUpon>defterkayitlifirma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="defterkayitlifirma2.resx">
+      <DependentUpon>defterkayitlifirma2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="defterkayitlifirma3.resx">
+      <DependentUpon>defterkayitlifirma3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="defterkayitlifirma4.resx">
+      <DependentUpon>defterkayitlifirma4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiris.resx">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayitlifirma.resx">
+      <DependentUpon>kayitlifirma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayitlifirmayeni.resx">
+      <DependentUpon>kayitlifirmayeni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="stokenvanteri.resx">
+      <DependentUpon>stokenvanteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stokhareket.resx">
+      <DependentUpon>stokhareket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stoktanimlari.resx">
+      <DependentUpon>stoktanimlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vsb.resx">
+      <DependentUpon>vsb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yenifirma.resx">
+      <DependentUpon>yenifirma.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="isletmedefteriortakhesaplarDataSet.xsc">
+      <DependentUpon>isletmedefteriortakhesaplarDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>isletmedefteriortakhesaplarDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet.xss">
+      <DependentUpon>isletmedefteriortakhesaplarDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet1.xsc">
+      <DependentUpon>isletmedefteriortakhesaplarDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>isletmedefteriortakhesaplarDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet1.xss">
+      <DependentUpon>isletmedefteriortakhesaplarDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet2.xsc">
+      <DependentUpon>isletmedefteriortakhesaplarDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>isletmedefteriortakhesaplarDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet2.xss">
+      <DependentUpon>isletmedefteriortakhesaplarDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet3.xsc">
+      <DependentUpon>isletmedefteriortakhesaplarDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>isletmedefteriortakhesaplarDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet3.xss">
+      <DependentUpon>isletmedefteriortakhesaplarDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet4.xsc">
+      <DependentUpon>isletmedefteriortakhesaplarDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>isletmedefteriortakhesaplarDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet4.xss">
+      <DependentUpon>isletmedefteriortakhesaplarDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet5.xsc">
+      <DependentUpon>isletmedefteriortakhesaplarDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>isletmedefteriortakhesaplarDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet5.xss">
+      <DependentUpon>isletmedefteriortakhesaplarDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortakhesaplarkayitDataSet.xsc">
+      <DependentUpon>isletmedefteriortakhesaplarkayitDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortakhesaplarkayitDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>isletmedefteriortakhesaplarkayitDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="isletmedefteriortakhesaplarkayitDataSet.xss">
+      <DependentUpon>isletmedefteriortakhesaplarkayitDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortakhesaplarkayitDataSet1.xsc">
+      <DependentUpon>isletmedefteriortakhesaplarkayitDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortakhesaplarkayitDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>isletmedefteriortakhesaplarkayitDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="isletmedefteriortakhesaplarkayitDataSet1.xss">
+      <DependentUpon>isletmedefteriortakhesaplarkayitDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortakhesaplarkayitDataSet2.xsc">
+      <DependentUpon>isletmedefteriortakhesaplarkayitDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortakhesaplarkayitDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>isletmedefteriortakhesaplarkayitDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="isletmedefteriortakhesaplarkayitDataSet2.xss">
+      <DependentUpon>isletmedefteriortakhesaplarkayitDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortaklarDataSet.xsc">
+      <DependentUpon>isletmedefteriortaklarDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortaklarDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>isletmedefteriortaklarDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="isletmedefteriortaklarDataSet.xss">
+      <DependentUpon>isletmedefteriortaklarDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortaklarDataSet1.xsc">
+      <DependentUpon>isletmedefteriortaklarDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortaklarDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>isletmedefteriortaklarDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="isletmedefteriortaklarDataSet1.xss">
+      <DependentUpon>isletmedefteriortaklarDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortaklarDataSet2.xsc">
+      <DependentUpon>isletmedefteriortaklarDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortaklarDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>isletmedefteriortaklarDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="isletmedefteriortaklarDataSet2.xss">
+      <DependentUpon>isletmedefteriortaklarDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortaklarDataSet3.xsc">
+      <DependentUpon>isletmedefteriortaklarDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortaklarDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>isletmedefteriortaklarDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="isletmedefteriortaklarDataSet3.xss">
+      <DependentUpon>isletmedefteriortaklarDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortaklarDataSet4.xsc">
+      <DependentUpon>isletmedefteriortaklarDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortaklarDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>isletmedefteriortaklarDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="isletmedefteriortaklarDataSet4.xss">
+      <DependentUpon>isletmedefteriortaklarDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortaklarDataSet5.xsc">
+      <DependentUpon>isletmedefteriortaklarDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortaklarDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>isletmedefteriortaklarDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="isletmedefteriortaklarDataSet5.xss">
+      <DependentUpon>isletmedefteriortaklarDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortaklarDataSet6.xsc">
+      <DependentUpon>isletmedefteriortaklarDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortaklarDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>isletmedefteriortaklarDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="isletmedefteriortaklarDataSet6.xss">
+      <DependentUpon>isletmedefteriortaklarDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarcariDataSet.xsc">
+      <DependentUpon>muhasebeortakhesaplarcariDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarcariDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>muhasebeortakhesaplarcariDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="muhasebeortakhesaplarcariDataSet.xss">
+      <DependentUpon>muhasebeortakhesaplarcariDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarcariDataSet1.xsc">
+      <DependentUpon>muhasebeortakhesaplarcariDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarcariDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>muhasebeortakhesaplarcariDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="muhasebeortakhesaplarcariDataSet1.xss">
+      <DependentUpon>muhasebeortakhesaplarcariDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarcariDataSet2.xsc">
+      <DependentUpon>muhasebeortakhesaplarcariDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarcariDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>muhasebeortakhesaplarcariDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="muhasebeortakhesaplarcariDataSet2.xss">
+      <DependentUpon>muhasebeortakhesaplarcariDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarcariDataSet3.xsc">
+      <DependentUpon>muhasebeortakhesaplarcariDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarcariDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>muhasebeortakhesaplarcariDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="muhasebeortakhesaplarcariDataSet3.xss">
+      <DependentUpon>muhasebeortakhesaplarcariDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarcariDataSet4.xsc">
+      <DependentUpon>muhasebeortakhesaplarcariDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarcariDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>muhasebeortakhesaplarcariDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="muhasebeortakhesaplarcariDataSet4.xss">
+      <DependentUpon>muhasebeortakhesaplarcariDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarisletmeDataSet.xsc">
+      <DependentUpon>muhasebeortakhesaplarisletmeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarisletmeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>muhasebeortakhesaplarisletmeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="muhasebeortakhesaplarisletmeDataSet.xss">
+      <DependentUpon>muhasebeortakhesaplarisletmeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarisletmeDataSet1.xsc">
+      <DependentUpon>muhasebeortakhesaplarisletmeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarisletmeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>muhasebeortakhesaplarisletmeDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="muhasebeortakhesaplarisletmeDataSet1.xss">
+      <DependentUpon>muhasebeortakhesaplarisletmeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarisletmeDataSet2.xsc">
+      <DependentUpon>muhasebeortakhesaplarisletmeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarisletmeDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>muhasebeortakhesaplarisletmeDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="muhasebeortakhesaplarisletmeDataSet2.xss">
+      <DependentUpon>muhasebeortakhesaplarisletmeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarisletmeDataSet3.xsc">
+      <DependentUpon>muhasebeortakhesaplarisletmeDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarisletmeDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>muhasebeortakhesaplarisletmeDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="muhasebeortakhesaplarisletmeDataSet3.xss">
+      <DependentUpon>muhasebeortakhesaplarisletmeDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarisletmeDataSet4.xsc">
+      <DependentUpon>muhasebeortakhesaplarisletmeDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarisletmeDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>muhasebeortakhesaplarisletmeDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="muhasebeortakhesaplarisletmeDataSet4.xss">
+      <DependentUpon>muhasebeortakhesaplarisletmeDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarstokDataSet.xsc">
+      <DependentUpon>muhasebeortakhesaplarstokDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarstokDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>muhasebeortakhesaplarstokDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="muhasebeortakhesaplarstokDataSet.xss">
+      <DependentUpon>muhasebeortakhesaplarstokDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarstokDataSet1.xsc">
+      <DependentUpon>muhasebeortakhesaplarstokDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarstokDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>muhasebeortakhesaplarstokDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="muhasebeortakhesaplarstokDataSet1.xss">
+      <DependentUpon>muhasebeortakhesaplarstokDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarstokDataSet2.xsc">
+      <DependentUpon>muhasebeortakhesaplarstokDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarstokDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>muhasebeortakhesaplarstokDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="muhasebeortakhesaplarstokDataSet2.xss">
+      <DependentUpon>muhasebeortakhesaplarstokDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarstokDataSet3.xsc">
+      <DependentUpon>muhasebeortakhesaplarstokDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="muhasebeortakhesaplarstokDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>muhasebeortakhesaplarstokDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="muhasebeortakhesaplarstokDataSet3.xss">
+      <DependentUpon>muhasebeortakhesaplarstokDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="isletmedefteriortakhesaplar.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="isletmedefteriortakhesaplarkayit.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="isletmedefteriortaklar.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="muhasebeortakhesaplarcari.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="muhasebeortakhesaplarisletme.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="muhasebeortakhesaplarstok.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
